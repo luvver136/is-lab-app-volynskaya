@@ -7,6 +7,7 @@ services:
       MSSQL_SA_PASSWORD: ${SA_PASSWORD}
     volumes:
       - mssql-data:/var/opt/mssql
+      - /opt/backups/mssql:/var/opt/mssql/backup
     networks:
       - is-net
     restart: unless-stopped
