@@ -480,3 +480,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Файлы окружения со секретами не коммитятся
+deploy/**/.env
